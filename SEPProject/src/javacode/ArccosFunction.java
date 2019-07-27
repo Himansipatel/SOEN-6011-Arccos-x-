@@ -1,5 +1,6 @@
 package javacode;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
@@ -117,11 +118,25 @@ public class ArccosFunction {
 
     ArccosFunction arccosObj = new ArccosFunction();
     Scanner sc = new Scanner(System.in);
-    System.out.println("Enter a number to calculate Arccos(x):-");
-    double inputNumber = sc.nextDouble();
+    boolean check = false;
+    double inputNumber = 0;
+
+    do {
+      try {
+        System.out.println("Enter a number to calculate Arccos(x):-");
+        inputNumber = sc.nextDouble();
+        check = false;
+      } catch (InputMismatchException e) {
+        check = true;
+        System.out.println("Sorry,It is expecting any number !! ..");
+      }
+      sc.nextLine();
+    } while (check);
+
     double result = arccosObj.arccos(inputNumber);
     System.out.println("Arccos(" + inputNumber + "):-" + result);
     sc.close();
+
 
   }
 
