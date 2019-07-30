@@ -71,12 +71,13 @@ public class ArccosFunction {
 
     do {
       try {
+        
         System.out.println("Enter a number to calculate Arccos(x):-");
         inputNumber = sc.nextDouble();
         check = false;
       } catch (InputMismatchException e) {
         check = true;
-        System.out.println("Sorry,input is expecting any number !! ..");
+        System.err.println("Sorry,input is expecting any real number !! ..");
       }
       sc.nextLine();
     } while (check);
