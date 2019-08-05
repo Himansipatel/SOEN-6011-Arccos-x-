@@ -16,6 +16,9 @@ public class HelperFunctionTest {
 
   private HelperFunction helperObj = new HelperFunction();
 
+  /**
+   * This test method checks the value of PI.
+   */
   @Test
   public void testPI() {
     double calculatedPI = helperObj.calculatePI();
@@ -24,6 +27,9 @@ public class HelperFunctionTest {
     assertEquals(calculatedRoundedPI, mathRoundedPI, 0.00000005);
   }
 
+  /**
+   * This test method checks the value of Factorial.
+   */
   @Test
   public void testFactorial() {
     double calculatedFactorial = helperObj.calculateFactorial(6);
@@ -31,6 +37,9 @@ public class HelperFunctionTest {
     assertEquals(calculatedFactorial, mathFactorial, 0.00000005);
   }
 
+  /**
+   * This test method checks the Power.
+   */
   @Test
   public void testPower() {
     double calculatedPower = helperObj.calculatePower(3.5, 4);
