@@ -8,7 +8,7 @@ import java.util.Scanner;
  * 
  * @author <a href="himansipatel1994@gmail.com">Himansi Patel</a>
  * @version 0.0.1
- * */
+ */
 public class ArccosFunction {
 
   /**
